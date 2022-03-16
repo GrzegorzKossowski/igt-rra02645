@@ -13,7 +13,6 @@ import NavLinksStyled from './NavLinksStyled';
 
 const AppBarStyled = styled(AppBar)(({ theme }) => ({
     background: `linear-gradient(0deg, ${theme.palette.primary.dark} 50%, ${theme.palette.common.white} 50%)`,
-    '@media screen and (max-width: 600px)': {},
 }));
 
 interface Props {
@@ -21,7 +20,7 @@ interface Props {
     setIsChecked: any;
 }
 
-const DesctopBar = ({ isChecked, setIsChecked }: Props) => {
+const DesktopBar = ({ isChecked, setIsChecked }: Props) => {
     return (
         <AppBarStyled
             position='static'
@@ -91,4 +90,4 @@ const DesctopBar = ({ isChecked, setIsChecked }: Props) => {
     );
 };
 
-export default DesctopBar;
+export default DesktopBar;

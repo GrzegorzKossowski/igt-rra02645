@@ -3,7 +3,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import defaultTheme from './styles/defaultTheme';
 import darkTheme from './styles/darkTheme';
 import Content from './components/content/Content';
-import DesctopBar from './components/navigation/DesctopBar';
+import DesktopBar from './components/navigation/DesktopBar';
 import Footer from './components/footer/Footer';
 import Features from './components/features/Features';
 import Header from './components/header/Header';
@@ -17,7 +17,7 @@ function App() {
     return (
         <ThemeProvider theme={isChecked ? defaultTheme : darkTheme}>
             <ThemeContext.Provider value={isChecked}>
-                <DesctopBar isChecked={isChecked} setIsChecked={setIsChecked} />
+                <DesktopBar isChecked={isChecked} setIsChecked={setIsChecked} />
                 <MobileBar isChecked={isChecked} setIsChecked={setIsChecked} />
                 <Header />
                 <Content />
